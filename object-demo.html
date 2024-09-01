@@ -1,0 +1,27 @@
+Check Inspect
+<script>
+    // Object creating demo using object Literal approach
+    let user1={
+        name:"jack",
+        Salary : 20000
+    };
+    let user2={
+        name:"Jenny",
+        Salary : 25000
+    };
+    console.log("combine salary of both Jack an jenny is " + (user1.Salary + user2.Salary));
+      // Object creation demo using class template using the "new"
+    class user{
+        constructor(name, Salary)
+        {
+            this.name =name;
+            this.Salary = Salary;
+        }
+    }
+
+    let user3 = new("Radha",23000)
+    let user4 = new("Mohan",27000) 
+    console.log("combine salary of both Mohan an Radha is " + (user4.Salary + user3.Salary));
+
+    
+</script>

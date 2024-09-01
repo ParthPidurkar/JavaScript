@@ -1,0 +1,30 @@
+<script>
+
+    function di ( s1 , s2 ){
+    
+        if(s1.age > s2.age)
+        {
+            return s1.name;
+        }
+        else{
+            return s2.name;
+        }
+    
+    };
+    
+    let user1 = {
+        fName:"Micheal",
+        lName: "Jackson",
+        age: 20
+    }
+    
+    let user2 = {
+        fName:"Blair",
+        lName: "Singer",
+        age: 25
+    }
+    console.log( di(user1,user2));
+    
+    
+    
+    </script>
