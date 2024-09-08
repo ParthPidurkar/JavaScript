@@ -1,0 +1,41 @@
+<script>
+    class Student {
+        constructor(name, age, height) {
+          this.name = name;
+          this.age = age;
+          this.height = height;
+        }
+      };
+      
+    // 1. Create an array of 5 students and using a loop display only thier names.
+      let studentsArray = [
+        new Student("ram", 18, 5.9),
+        new Student("sam", 19, 5.5),
+        new Student("jay", 20, 6.0),
+        new Student("mohan", 18, 5.4),
+        new Student("rohan", 21, 5.8)
+        ];
+        console.log(studentsArray);
+        for (let i = 0; i < studentsArray.length; i++) {
+            console.log(studentsArray[i].name);
+        }
+
+      // 2. Students at index 1 and 2 are not regular to the college.
+     // Remove them and print the removed students names
+        let removedStudents = studentsArray.splice(1, 2);
+        for (let i = 0; i < removedStudents.length; i++) {
+            console.log(removedStudents[i].name);
+        }
+
+
+       // 3. Print names of the students along with thier age of all those students whose age is > 21
+        let filteredStudents = studentsArray.filter(student => student.age >= 21);
+        for (let i = 0; i < filteredStudents.length; i++) 
+        // {
+        //     console.log(filteredStudents[i].name + filteredStudents[i].age);
+        // }
+        for (let i = 0; i < filteredStudents.length; i++) {
+            console.log(`Name: ${filteredStudents[i].name}, Age: ${filteredStudents[i].age}`);
+        }
+
+</script>
